@@ -113,7 +113,7 @@ export const settings = {
     defaultValue: 1,
     defaultMin: 1,
     defaultMax: 9,
-  }, 
+  },
   datePicker: {
     maxDaysInFuture: 14,
   },
@@ -124,7 +124,7 @@ export const settings = {
     tableIdAttribute: 'data-table',
   },
   db: {
-    url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),
+    url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131/api' : ''),
     product: 'product',
     order: 'order',
     booking: 'booking',
@@ -136,7 +136,7 @@ export const settings = {
   },
 };
 
-export const templates = 
+export const templates =
 {
   menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
   cartProduct: Handlebars.compile(document.querySelector(select.templateOf.cartProduct).innerHTML),
